@@ -488,28 +488,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const renderInput = () => {
-  const parent = document.body;
+  const scoresInputDiv = document.getElementById('user-input-div');
 
-  const h1 = document.createElement('h1');
-  h1.textContent = 'Leaderboard';
-  parent.insertBefore(h1, parent.children[0]);
+  const nameInput = document.getElementById('input');
+  nameInput.type = 'text';
+  nameInput.id = 'input-input';
+  nameInput.innerHTML = 'Name';
 
-  const mainDiv = document.createElement('div');
-  mainDiv.id = 'main-div';
-  mainDiv.className = 'main-div';
+  const scoresInput = document.getElementById('input');
+  scoresInput.type = 'text';
+  scoresInput.id = 'scores-input';
 
-  const userInputDiv = document.createElement('div');
-  userInputDiv.id = 'user-input-div';
-  userInputDiv.className = 'user-input-div';
-
-  const leaderboardDiv = document.createElement('div');
-  leaderboardDiv.id = 'leaderboard-div';
-  leaderboardDiv.className = 'leaderboard-div';
-
-  mainDiv.appendChild(userInputDiv);
-  mainDiv.appendChild(leaderboardDiv);
-
-  parent.insertBefore(mainDiv, parent.children[1]);
+  scoresInputDiv.appendChild(nameInput);
+  scoresInputDiv.appendChild(scoresInput);
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderInput);
@@ -601,10 +592,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/style.css */ "./src/modules/style.css");
 
 
+// import {
+//   scores,
+//   localStorageGetScores,
+//   localStorageSetScores,
+// } from './modules/localStorage';
+
 (0,_modules_renderInput__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlef279ac8ff6a50e2c9638.js.map
+//# sourceMappingURL=bundle5055f04fd0479b904f65.js.map
