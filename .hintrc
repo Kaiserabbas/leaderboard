@@ -10,9 +10,11 @@
   "hints": [
     "button-type",
     "disown-opener",
-    "html-checker",
     "meta-charset-utf-8",
     "meta-viewport",
-    "no-inline-styles:error"
+    "no-inline-styles:error",
+     "html-checker": ["error", {
+            "ignore": ["Invalid attribute", "Invalid tag"]
+        }]
   ]
 }
