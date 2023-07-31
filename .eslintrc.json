@@ -12,6 +12,7 @@
   },
   "extends": ["airbnb-base"],
   "rules": {
+    "no-restricted-globals": ["error", "event", "fdescribe", "fit"], 
     "no-use-before-define": "off",
     "prefer-destructuring": ["error", {"object": true, "array": false}],
     "func-names": ["error", "never", { "generators": "always" }],
@@ -28,7 +29,11 @@
      "comma-dangle": ["off", "always-multiline"],
     "import/extensions": [ 1, {
       "js": "always", "json": "always"
-    }]
+    }],
+    "object-shorthand": "off",
+    "no-alert": "off",
+    "prefer-destructuring": "off",
+    "operator-linebreak": "off"
   },
   "ignorePatterns": [
     "dist/",

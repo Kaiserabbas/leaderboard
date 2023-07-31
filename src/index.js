@@ -1,12 +1,12 @@
-import renderInput from './modules/renderInput';
 import './modules/style.css';
-// import {
-//   scores,
-//   localStorageGetScores,
-//   localStorageSetScores,
-// } from './modules/localStorage';
+import { renderScores, handleSubmit } from './modules/renderScores.js';
 
-renderInput();
+const form = document.getElementById('form');
+form.addEventListener('submit', handleSubmit);
+
+// Initial render of the scoreboard
+renderScores();
+
 const refreshButton = document.getElementById('refresh-btn');
 refreshButton.addEventListener('click', () => {
   location.reload();

@@ -22,15 +22,130 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #9dc6f5;
-}`, "",{"version":3,"sources":["webpack://./src/modules/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,kCAAkC;AACtC;;AAEA;IACI,yBAAyB;AAC7B","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Poppins', sans-serif; \n}\n\nbody {\n    background-color: #9dc6f5;\n}"],"sourceRoot":""}]);
+  background-color: #fff;
+}
+
+header h1 {
+  margin: 30px 400px 50px 0;
+  text-align: center;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-gap: 0 25px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form input {
+  width: 200px;
+  margin: 10px 0 0 0;
+  padding: 2px 10px;
+  border: 2px solid black;
+}
+
+button {
+  margin: 10px 0 0 0;
+  padding: 2px 10px;
+  box-shadow: 3px 3px #000;
+}
+
+#refresh-btn {
+  margin: 0 0 0 10px;
+}
+
+#form button {
+  position: relative;
+  left: 30%;
+}
+
+.scores-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+
+.scoreboard {
+  width: 400px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 5px #000;
+}
+
+.score-element {
+  padding: 10px 0 10px 10px;
+}
+
+.score-even {
+  background-color: #f0f0f0;
+}
+
+.score-odd {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    margin: 0 0 50px 0;
+  }
+
+  .main-div {
+    flex-direction: column;
+    grid-gap: 25px 0;
+  }
+
+  .user-input-div {
+    order: 1;
+    margin: 0 0 50px 0;
+  }
+
+  .user-input-div h2 {
+    text-align: center;
+  }
+
+  .leaderboard-div {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scoreboard {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .score-element {
+    padding: 10px 0 10px 10px;
+  }
+
+  #form button {
+    position: relative;
+    left: 60px;
+  }
+
+  .scores-header {
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./src/modules/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;EACjB,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,wBAAwB;AAC1B;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,8BAA8B;EAC9B,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,uBAAuB;EACvB,4BAA4B;AAC9B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE;IACE,kBAAkB;EACpB;;EAEA;IACE,sBAAsB;IACtB,gBAAgB;EAClB;;EAEA;IACE,QAAQ;IACR,kBAAkB;EACpB;;EAEA;IACE,kBAAkB;EACpB;;EAEA;IACE,QAAQ;IACR,aAAa;IACb,sBAAsB;IACtB,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,uBAAuB;EACzB;;EAEA;IACE,yBAAyB;EAC3B;;EAEA;IACE,kBAAkB;IAClB,UAAU;EACZ;;EAEA;IACE,uBAAuB;IACvB,kBAAkB;EACpB;AACF","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', sans-serif;\n}\n\nbody {\n  background-color: #fff;\n}\n\nheader h1 {\n  margin: 30px 400px 50px 0;\n  text-align: center;\n}\n\n.main-div {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  grid-gap: 0 25px;\n}\n\n#form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#form input {\n  width: 200px;\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  border: 2px solid black;\n}\n\nbutton {\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  box-shadow: 3px 3px #000;\n}\n\n#refresh-btn {\n  margin: 0 0 0 10px;\n}\n\n#form button {\n  position: relative;\n  left: 30%;\n}\n\n.scores-header {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0 0 20px 0;\n}\n\n.scoreboard {\n  width: 400px;\n  border: 2px solid black;\n  box-shadow: 3px 3px 5px #000;\n}\n\n.score-element {\n  padding: 10px 0 10px 10px;\n}\n\n.score-even {\n  background-color: #f0f0f0;\n}\n\n.score-odd {\n  background-color: #fff;\n}\n\n@media screen and (max-width: 600px) {\n  header h1 {\n    margin: 0 0 50px 0;\n  }\n\n  .main-div {\n    flex-direction: column;\n    grid-gap: 25px 0;\n  }\n\n  .user-input-div {\n    order: 1;\n    margin: 0 0 50px 0;\n  }\n\n  .user-input-div h2 {\n    text-align: center;\n  }\n\n  .leaderboard-div {\n    order: 2;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  .scoreboard {\n    width: 300px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n  }\n\n  .score-element {\n    padding: 10px 0 10px 10px;\n  }\n\n  #form button {\n    position: relative;\n    left: 60px;\n  }\n\n  .scores-header {\n    justify-content: center;\n    margin: 0 0 20px 0;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -477,33 +592,168 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/modules/renderInput.js":
-/*!************************************!*\
-  !*** ./src/modules/renderInput.js ***!
-  \************************************/
+/***/ "./src/modules/addScore.js":
+/*!*********************************!*\
+  !*** ./src/modules/addScore.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const renderInput = () => {
-  const scoresInputDiv = document.getElementById('user-input-div');
+/* harmony import */ var _localStorage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./localStorage.js */ "./src/modules/localStorage.js");
 
-  const nameInput = document.getElementById('input');
-  nameInput.type = 'text';
-  nameInput.id = 'input-input';
-  nameInput.innerHTML = 'Name';
 
-  const scoresInput = document.getElementById('input');
-  scoresInput.type = 'text';
-  scoresInput.id = 'scores-input';
+// Function to add a new score to the scoreboard
+const addScore = (username, score) => {
+  const scores = (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_0__.getScores)();
 
-  scoresInputDiv.appendChild(nameInput);
-  scoresInputDiv.appendChild(scoresInput);
+  // Create a new score object
+  const newScore = {
+    username: username,
+    score: score,
+    index: scores.length + 1,
+    status: 'new',
+  };
+
+  // Add the new score to the scores array
+  scores.push(newScore);
+
+  // Save the updated scores to local storage
+  (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_0__.saveScores)(scores);
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderInput);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addScore);
+
+
+/***/ }),
+
+/***/ "./src/modules/localStorage.js":
+/*!*************************************!*\
+  !*** ./src/modules/localStorage.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getScores: () => (/* binding */ getScores),
+/* harmony export */   initializeLocalStorage: () => (/* binding */ initializeLocalStorage),
+/* harmony export */   saveScores: () => (/* binding */ saveScores)
+/* harmony export */ });
+const SCORES_KEY = 'scores';
+
+// Function to initialize local storage with pre-loaded data
+const initializeLocalStorage = () => {
+  const initialData = [
+    {
+      username: 'Ali',
+      score: 100,
+      index: 1,
+      status: 'new',
+    },
+    {
+      username: 'Qaisar',
+      score: 85,
+      index: 2,
+      status: 'new',
+    },
+    {
+      username: 'Hashim',
+      score: 120,
+      index: 3,
+      status: 'new',
+    },
+    {
+      username: 'Mustafa',
+      score: 120,
+      index: 3,
+      status: 'new',
+    },
+    {
+      username: 'Mirqal',
+      score: 120,
+      index: 3,
+      status: 'new',
+    },
+  ];
+
+  localStorage.setItem(SCORES_KEY, JSON.stringify(initialData));
+};
+
+const getScores = () => {
+  const scores = JSON.parse(localStorage.getItem(SCORES_KEY)) || [];
+  return scores;
+};
+
+const saveScores = (scores) => {
+  localStorage.setItem(SCORES_KEY, JSON.stringify(scores));
+};
+
+
+
+
+/***/ }),
+
+/***/ "./src/modules/renderScores.js":
+/*!*************************************!*\
+  !*** ./src/modules/renderScores.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleSubmit: () => (/* binding */ handleSubmit),
+/* harmony export */   renderScores: () => (/* binding */ renderScores)
+/* harmony export */ });
+/* harmony import */ var _addScore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addScore.js */ "./src/modules/addScore.js");
+/* harmony import */ var _localStorage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./localStorage.js */ "./src/modules/localStorage.js");
+
+
+// Initialize local storage with pre-loaded data (if not already initialized)
+if (!localStorage.getItem('scores')) {
+  (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_1__.initializeLocalStorage)();
+}
+// Function to render the scoreboard on the page
+const renderScores = () => {
+  const scoreboardDiv = document.getElementById('scoreboard');
+  scoreboardDiv.innerHTML = '';
+
+  const scores = (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_1__.getScores)();
+
+  scores.forEach((score) => {
+    const scoreElement = document.createElement('div');
+    scoreElement.className = 'score-element';
+    scoreElement.textContent = `${score.username}: ${score.score}`;
+    scoreElement.classList.add(
+      score.index % 2 === 0 ? 'score-even' : 'score-odd'
+    );
+    scoreboardDiv.appendChild(scoreElement);
+  });
+};
+
+// Function to handle form submission
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const usernameInput = document.getElementById('username');
+  const scoreInput = document.getElementById('yourscore');
+
+  const username = usernameInput.value;
+  const score = scoreInput.value;
+
+  if (username.trim() === '' || score.trim() === '') {
+    alert('Please enter both a username and a score.');
+    return;
+  }
+  (0,_addScore_js__WEBPACK_IMPORTED_MODULE_0__["default"])(username, score);
+  renderScores();
+
+  // Clear the form inputs
+  usernameInput.value = '';
+  scoreInput.value = '';
+};
+
+
 
 
 /***/ })
@@ -588,20 +838,24 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_renderInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/renderInput */ "./src/modules/renderInput.js");
-/* harmony import */ var _modules_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/style.css */ "./src/modules/style.css");
+/* harmony import */ var _modules_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/style.css */ "./src/modules/style.css");
+/* harmony import */ var _modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/renderScores.js */ "./src/modules/renderScores.js");
 
 
-// import {
-//   scores,
-//   localStorageGetScores,
-//   localStorageSetScores,
-// } from './modules/localStorage';
 
-(0,_modules_renderInput__WEBPACK_IMPORTED_MODULE_0__["default"])();
+const form = document.getElementById('form');
+form.addEventListener('submit', _modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.handleSubmit);
+
+// Initial render of the scoreboard
+(0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.renderScores)();
+
+const refreshButton = document.getElementById('refresh-btn');
+refreshButton.addEventListener('click', () => {
+  location.reload();
+});
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle5055f04fd0479b904f65.js.map
+//# sourceMappingURL=bundlea4411fd8df04f38ef45f.js.map
