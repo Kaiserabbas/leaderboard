@@ -1,4 +1,4 @@
-import urlAPI from './api';
+import urlAPI from './api.js';
 
 const getScores = async () => {
   try {
@@ -26,12 +26,6 @@ const displayScores = (scores) => {
     scoreboard.appendChild(scoreDiv);
   });
 };
-
-const refreshButton = document.getElementById('refresh-btn');
-refreshButton.addEventListener('click', async () => {
-  const scores = await getScores();
-  displayScores(scores);
-});
 
 const saveScore = async (user, score) => {
   try {

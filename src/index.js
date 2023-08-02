@@ -1,5 +1,5 @@
 import './modules/style.css';
-import { getScores, displayScores, saveScore } from './modules/renderScores';
+import { getScores, displayScores, saveScore } from './modules/renderScores.js';
 
 const form = document.getElementById('form');
 form.addEventListener('submit', async (event) => {
