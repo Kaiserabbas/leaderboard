@@ -109,7 +109,7 @@ You can deploy this project using Github Pages
 
 ## 👥 Author <a name="authors"></a>
 
-👤 **Hamid Azim**
+👤 **Qaisar Abbas**
 
 - GitHub: [@Kaiserabbas](https://github.com/Kaiserabbas)
 - HackerRank: [@kayser_abbas](https://www.hackerrank.com/kayser_abbas?hr_r=1)
