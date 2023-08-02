@@ -104,8 +104,7 @@ npm test
 ### Deployment
 
 You can deploy this project using Github Pages
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[https://rawcdn.githack.com/Kaiserabbas/leaderboard/ba5e7267f56c9f9d331cda89ad6fd5850dc7dad8/dist/index.html]
 
 ## 👥 Author <a name="authors"></a>
 
