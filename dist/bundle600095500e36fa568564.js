@@ -29,19 +29,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
 }
 
 body {
-  background-color: #fff;
+  background-color: gainsboro;
+}
+
+header {
+  background-color: whitesmoke;
+  padding: 30px 0 30px 0;
 }
 
 header h1 {
-  margin: 30px 400px 50px 0;
+  color: cadetblue;
+  margin: 0 250px 0 0;
   text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
 }
 
 .main-div {
+  margin: 50px 0 0 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  grid-gap: 0 25px;
+  grid-gap: 0 30px;
+}
+
+.user-input-div h2 {
+  color: maroon;
+  margin: 0 0 15px 0;
 }
 
 #form {
@@ -51,16 +65,31 @@ header h1 {
 }
 
 #form input {
+  border-radius: 5px;
   width: 200px;
   margin: 10px 0 0 0;
-  padding: 2px 10px;
+  padding: 5px 10px;
   border: 2px solid black;
 }
 
 button {
+  border-radius: 3px;
   margin: 10px 0 0 0;
-  padding: 2px 10px;
+  padding: 4px 20px;
   box-shadow: 3px 3px #000;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: cadetblue;
+  color: #fff;
+}
+
+button:active {
+  background-color: cadetblue;
+  color: #fff;
+  box-shadow: none;
+  transform: translateY(4px);
 }
 
 #refresh-btn {
@@ -78,6 +107,10 @@ button {
   align-items: center;
   justify-content: space-between;
   margin: 0 0 20px 0;
+}
+
+.scores-header h2 {
+  color: maroon;
 }
 
 .scoreboard {
@@ -104,7 +137,8 @@ button {
 
 @media screen and (max-width: 600px) {
   header h1 {
-    margin: 0 0 50px 0;
+    margin: 0 0 0 0;
+    font-size: 2.5rem;
   }
 
   .main-div {
@@ -149,7 +183,7 @@ button {
     margin: 0 0 20px 0;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/modules/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;EACjB,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,wBAAwB;AAC1B;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,8BAA8B;EAC9B,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,uBAAuB;EACvB,4BAA4B;AAC9B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE;IACE,kBAAkB;EACpB;;EAEA;IACE,sBAAsB;IACtB,gBAAgB;EAClB;;EAEA;IACE,QAAQ;IACR,kBAAkB;EACpB;;EAEA;IACE,kBAAkB;EACpB;;EAEA;IACE,QAAQ;IACR,aAAa;IACb,sBAAsB;IACtB,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,uBAAuB;EACzB;;EAEA;IACE,yBAAyB;EAC3B;;EAEA;IACE,kBAAkB;IAClB,UAAU;EACZ;;EAEA;IACE,uBAAuB;IACvB,kBAAkB;EACpB;AACF","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', sans-serif;\n}\n\nbody {\n  background-color: #fff;\n}\n\nheader h1 {\n  margin: 30px 400px 50px 0;\n  text-align: center;\n}\n\n.main-div {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  grid-gap: 0 25px;\n}\n\n#form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#form input {\n  width: 200px;\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  border: 2px solid black;\n}\n\nbutton {\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  box-shadow: 3px 3px #000;\n}\n\n#refresh-btn {\n  margin: 0 0 0 10px;\n}\n\n#form button {\n  position: relative;\n  left: 30%;\n}\n\n.scores-header {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0 0 20px 0;\n}\n\n.scoreboard {\n  width: 400px;\n  border: 2px solid black;\n  box-shadow: 3px 3px 5px #000;\n}\n\n.score-element {\n  padding: 10px 0 10px 10px;\n}\n\n.score-item {\n  padding: 5px;\n}\n\n.white-bg {\n  background-color: white;\n}\n\n.grey-bg {\n  background-color: rgb(240, 240, 240);\n}\n\n@media screen and (max-width: 600px) {\n  header h1 {\n    margin: 0 0 50px 0;\n  }\n\n  .main-div {\n    flex-direction: column;\n    grid-gap: 25px 0;\n  }\n\n  .user-input-div {\n    order: 1;\n    margin: 0 0 50px 0;\n  }\n\n  .user-input-div h2 {\n    text-align: center;\n  }\n\n  .leaderboard-div {\n    order: 2;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  .scoreboard {\n    width: 300px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n  }\n\n  .score-element {\n    padding: 10px 0 10px 10px;\n  }\n\n  #form button {\n    position: relative;\n    left: 60px;\n  }\n\n  .scores-header {\n    justify-content: center;\n    margin: 0 0 20px 0;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/modules/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,kBAAkB;EAClB,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;EACjB,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,iBAAiB;EACjB,wBAAwB;EACxB,eAAe;AACjB;;AAEA;EACE,2BAA2B;EAC3B,WAAW;AACb;;AAEA;EACE,2BAA2B;EAC3B,WAAW;EACX,gBAAgB;EAChB,0BAA0B;AAC5B;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,8BAA8B;EAC9B,kBAAkB;AACpB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,uBAAuB;EACvB,4BAA4B;AAC9B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE;IACE,eAAe;IACf,iBAAiB;EACnB;;EAEA;IACE,sBAAsB;IACtB,gBAAgB;EAClB;;EAEA;IACE,QAAQ;IACR,kBAAkB;EACpB;;EAEA;IACE,kBAAkB;EACpB;;EAEA;IACE,QAAQ;IACR,aAAa;IACb,sBAAsB;IACtB,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,uBAAuB;EACzB;;EAEA;IACE,yBAAyB;EAC3B;;EAEA;IACE,kBAAkB;IAClB,UAAU;EACZ;;EAEA;IACE,uBAAuB;IACvB,kBAAkB;EACpB;AACF","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: gainsboro;\r\n}\r\n\r\nheader {\r\n  background-color: whitesmoke;\r\n  padding: 30px 0 30px 0;\r\n}\r\n\r\nheader h1 {\r\n  color: cadetblue;\r\n  margin: 0 250px 0 0;\r\n  text-align: center;\r\n  font-size: 3.5rem;\r\n  font-weight: 900;\r\n}\r\n\r\n.main-div {\r\n  margin: 50px 0 0 0;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  grid-gap: 0 30px;\r\n}\r\n\r\n.user-input-div h2 {\r\n  color: maroon;\r\n  margin: 0 0 15px 0;\r\n}\r\n\r\n#form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n#form input {\r\n  border-radius: 5px;\r\n  width: 200px;\r\n  margin: 10px 0 0 0;\r\n  padding: 5px 10px;\r\n  border: 2px solid black;\r\n}\r\n\r\nbutton {\r\n  border-radius: 3px;\r\n  margin: 10px 0 0 0;\r\n  padding: 4px 20px;\r\n  box-shadow: 3px 3px #000;\r\n  font-size: 1rem;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: cadetblue;\r\n  color: #fff;\r\n}\r\n\r\nbutton:active {\r\n  background-color: cadetblue;\r\n  color: #fff;\r\n  box-shadow: none;\r\n  transform: translateY(4px);\r\n}\r\n\r\n#refresh-btn {\r\n  margin: 0 0 0 10px;\r\n}\r\n\r\n#form button {\r\n  position: relative;\r\n  left: 30%;\r\n}\r\n\r\n.scores-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin: 0 0 20px 0;\r\n}\r\n\r\n.scores-header h2 {\r\n  color: maroon;\r\n}\r\n\r\n.scoreboard {\r\n  width: 400px;\r\n  border: 2px solid black;\r\n  box-shadow: 3px 3px 5px #000;\r\n}\r\n\r\n.score-element {\r\n  padding: 10px 0 10px 10px;\r\n}\r\n\r\n.score-item {\r\n  padding: 5px;\r\n}\r\n\r\n.white-bg {\r\n  background-color: white;\r\n}\r\n\r\n.grey-bg {\r\n  background-color: rgb(240, 240, 240);\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  header h1 {\r\n    margin: 0 0 0 0;\r\n    font-size: 2.5rem;\r\n  }\r\n\r\n  .main-div {\r\n    flex-direction: column;\r\n    grid-gap: 25px 0;\r\n  }\r\n\r\n  .user-input-div {\r\n    order: 1;\r\n    margin: 0 0 50px 0;\r\n  }\r\n\r\n  .user-input-div h2 {\r\n    text-align: center;\r\n  }\r\n\r\n  .leaderboard-div {\r\n    order: 2;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n\r\n  .scoreboard {\r\n    width: 300px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n  }\r\n\r\n  .score-element {\r\n    padding: 10px 0 10px 10px;\r\n  }\r\n\r\n  #form button {\r\n    position: relative;\r\n    left: 60px;\r\n  }\r\n\r\n  .scores-header {\r\n    justify-content: center;\r\n    margin: 0 0 20px 0;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -800,4 +834,4 @@ refreshButton.addEventListener('click', async () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle1b7be9a8a7bd4f98e3f5.js.map
+//# sourceMappingURL=bundle600095500e36fa568564.js.map
