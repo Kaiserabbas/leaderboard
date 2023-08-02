@@ -19,6 +19,7 @@
      "prefer-arrow-callback": "off",
     "arrow-parens": "off",
     "no-unused-vars": "off",
+    "no-console": "off",
     "no-shadow": "off",
     "no-plusplus": "off", 
     "no-param-reassign": "off",
@@ -26,6 +27,7 @@
      "radix": "off",
     "no-const-assign": "off",
     "arrow-body-style": "off",
+    "consistent-return": "off",
      "comma-dangle": ["off", "always-multiline"],
     "import/extensions": [ 1, {
       "js": "always", "json": "always"

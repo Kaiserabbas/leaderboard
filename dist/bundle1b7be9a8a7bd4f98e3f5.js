@@ -90,12 +90,16 @@ button {
   padding: 10px 0 10px 10px;
 }
 
-.score-even {
-  background-color: #f0f0f0;
+.score-item {
+  padding: 5px;
 }
 
-.score-odd {
-  background-color: #fff;
+.white-bg {
+  background-color: white;
+}
+
+.grey-bg {
+  background-color: rgb(240, 240, 240);
 }
 
 @media screen and (max-width: 600px) {
@@ -145,7 +149,7 @@ button {
     margin: 0 0 20px 0;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/modules/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;EACjB,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,wBAAwB;AAC1B;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,8BAA8B;EAC9B,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,uBAAuB;EACvB,4BAA4B;AAC9B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE;IACE,kBAAkB;EACpB;;EAEA;IACE,sBAAsB;IACtB,gBAAgB;EAClB;;EAEA;IACE,QAAQ;IACR,kBAAkB;EACpB;;EAEA;IACE,kBAAkB;EACpB;;EAEA;IACE,QAAQ;IACR,aAAa;IACb,sBAAsB;IACtB,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,uBAAuB;EACzB;;EAEA;IACE,yBAAyB;EAC3B;;EAEA;IACE,kBAAkB;IAClB,UAAU;EACZ;;EAEA;IACE,uBAAuB;IACvB,kBAAkB;EACpB;AACF","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', sans-serif;\n}\n\nbody {\n  background-color: #fff;\n}\n\nheader h1 {\n  margin: 30px 400px 50px 0;\n  text-align: center;\n}\n\n.main-div {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  grid-gap: 0 25px;\n}\n\n#form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#form input {\n  width: 200px;\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  border: 2px solid black;\n}\n\nbutton {\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  box-shadow: 3px 3px #000;\n}\n\n#refresh-btn {\n  margin: 0 0 0 10px;\n}\n\n#form button {\n  position: relative;\n  left: 30%;\n}\n\n.scores-header {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0 0 20px 0;\n}\n\n.scoreboard {\n  width: 400px;\n  border: 2px solid black;\n  box-shadow: 3px 3px 5px #000;\n}\n\n.score-element {\n  padding: 10px 0 10px 10px;\n}\n\n.score-even {\n  background-color: #f0f0f0;\n}\n\n.score-odd {\n  background-color: #fff;\n}\n\n@media screen and (max-width: 600px) {\n  header h1 {\n    margin: 0 0 50px 0;\n  }\n\n  .main-div {\n    flex-direction: column;\n    grid-gap: 25px 0;\n  }\n\n  .user-input-div {\n    order: 1;\n    margin: 0 0 50px 0;\n  }\n\n  .user-input-div h2 {\n    text-align: center;\n  }\n\n  .leaderboard-div {\n    order: 2;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  .scoreboard {\n    width: 300px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n  }\n\n  .score-element {\n    padding: 10px 0 10px 10px;\n  }\n\n  #form button {\n    position: relative;\n    left: 60px;\n  }\n\n  .scores-header {\n    justify-content: center;\n    margin: 0 0 20px 0;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/modules/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;EACjB,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,wBAAwB;AAC1B;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,8BAA8B;EAC9B,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,uBAAuB;EACvB,4BAA4B;AAC9B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE;IACE,kBAAkB;EACpB;;EAEA;IACE,sBAAsB;IACtB,gBAAgB;EAClB;;EAEA;IACE,QAAQ;IACR,kBAAkB;EACpB;;EAEA;IACE,kBAAkB;EACpB;;EAEA;IACE,QAAQ;IACR,aAAa;IACb,sBAAsB;IACtB,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,uBAAuB;EACzB;;EAEA;IACE,yBAAyB;EAC3B;;EAEA;IACE,kBAAkB;IAClB,UAAU;EACZ;;EAEA;IACE,uBAAuB;IACvB,kBAAkB;EACpB;AACF","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', sans-serif;\n}\n\nbody {\n  background-color: #fff;\n}\n\nheader h1 {\n  margin: 30px 400px 50px 0;\n  text-align: center;\n}\n\n.main-div {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  grid-gap: 0 25px;\n}\n\n#form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#form input {\n  width: 200px;\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  border: 2px solid black;\n}\n\nbutton {\n  margin: 10px 0 0 0;\n  padding: 2px 10px;\n  box-shadow: 3px 3px #000;\n}\n\n#refresh-btn {\n  margin: 0 0 0 10px;\n}\n\n#form button {\n  position: relative;\n  left: 30%;\n}\n\n.scores-header {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0 0 20px 0;\n}\n\n.scoreboard {\n  width: 400px;\n  border: 2px solid black;\n  box-shadow: 3px 3px 5px #000;\n}\n\n.score-element {\n  padding: 10px 0 10px 10px;\n}\n\n.score-item {\n  padding: 5px;\n}\n\n.white-bg {\n  background-color: white;\n}\n\n.grey-bg {\n  background-color: rgb(240, 240, 240);\n}\n\n@media screen and (max-width: 600px) {\n  header h1 {\n    margin: 0 0 50px 0;\n  }\n\n  .main-div {\n    flex-direction: column;\n    grid-gap: 25px 0;\n  }\n\n  .user-input-div {\n    order: 1;\n    margin: 0 0 50px 0;\n  }\n\n  .user-input-div h2 {\n    text-align: center;\n  }\n\n  .leaderboard-div {\n    order: 2;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  .scoreboard {\n    width: 300px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n  }\n\n  .score-element {\n    padding: 10px 0 10px 10px;\n  }\n\n  #form button {\n    position: relative;\n    left: 60px;\n  }\n\n  .scores-header {\n    justify-content: center;\n    margin: 0 0 20px 0;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -592,105 +596,19 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/modules/addScore.js":
-/*!*********************************!*\
-  !*** ./src/modules/addScore.js ***!
-  \*********************************/
+/***/ "./src/modules/api.js":
+/*!****************************!*\
+  !*** ./src/modules/api.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _localStorage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./localStorage.js */ "./src/modules/localStorage.js");
-
-
-// Function to add a new score to the scoreboard
-const addScore = (username, score) => {
-  const scores = (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_0__.getScores)();
-
-  // Create a new score object
-  const newScore = {
-    username: username,
-    score: score,
-    index: scores.length + 1,
-    status: 'new',
-  };
-
-  // Add the new score to the scores array
-  scores.push(newScore);
-
-  // Save the updated scores to local storage
-  (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_0__.saveScores)(scores);
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addScore);
-
-
-/***/ }),
-
-/***/ "./src/modules/localStorage.js":
-/*!*************************************!*\
-  !*** ./src/modules/localStorage.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   getScores: () => (/* binding */ getScores),
-/* harmony export */   initializeLocalStorage: () => (/* binding */ initializeLocalStorage),
-/* harmony export */   saveScores: () => (/* binding */ saveScores)
-/* harmony export */ });
-const SCORES_KEY = 'scores';
-
-// Function to initialize local storage with pre-loaded data
-const initializeLocalStorage = () => {
-  const initialData = [
-    {
-      username: 'Ali',
-      score: 100,
-      index: 1,
-      status: 'new',
-    },
-    {
-      username: 'Qaisar',
-      score: 85,
-      index: 2,
-      status: 'new',
-    },
-    {
-      username: 'Hashim',
-      score: 120,
-      index: 3,
-      status: 'new',
-    },
-    {
-      username: 'Mustafa',
-      score: 120,
-      index: 3,
-      status: 'new',
-    },
-    {
-      username: 'Mirqal',
-      score: 120,
-      index: 3,
-      status: 'new',
-    },
-  ];
-
-  localStorage.setItem(SCORES_KEY, JSON.stringify(initialData));
-};
-
-const getScores = () => {
-  const scores = JSON.parse(localStorage.getItem(SCORES_KEY)) || [];
-  return scores;
-};
-
-const saveScores = (scores) => {
-  localStorage.setItem(SCORES_KEY, JSON.stringify(scores));
-};
-
-
+const gameId = 'kyBoyHWV3ns6jrHWqAzp';
+const urlAPI = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (urlAPI);
 
 
 /***/ }),
@@ -703,54 +621,58 @@ const saveScores = (scores) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleSubmit: () => (/* binding */ handleSubmit),
-/* harmony export */   renderScores: () => (/* binding */ renderScores)
+/* harmony export */   displayScores: () => (/* binding */ displayScores),
+/* harmony export */   getScores: () => (/* binding */ getScores),
+/* harmony export */   saveScore: () => (/* binding */ saveScore)
 /* harmony export */ });
-/* harmony import */ var _addScore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addScore.js */ "./src/modules/addScore.js");
-/* harmony import */ var _localStorage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./localStorage.js */ "./src/modules/localStorage.js");
+/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.js */ "./src/modules/api.js");
 
 
-// Initialize local storage with pre-loaded data (if not already initialized)
-if (!localStorage.getItem('scores')) {
-  (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_1__.initializeLocalStorage)();
-}
-// Function to render the scoreboard on the page
-const renderScores = () => {
-  const scoreboardDiv = document.getElementById('scoreboard');
-  scoreboardDiv.innerHTML = '';
+const getScores = async () => {
+  try {
+    const response = await fetch(_api_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
+    const data = await response.json();
+    return data.result;
+  } catch (error) {
+    console.error('Error fetching scores:', error);
+  }
+};
 
-  const scores = (0,_localStorage_js__WEBPACK_IMPORTED_MODULE_1__.getScores)();
+const displayScores = (scores) => {
+  const scoreboard = document.getElementById('scoreboard');
+  scoreboard.innerHTML = '';
 
-  scores.forEach((score) => {
-    const scoreElement = document.createElement('div');
-    scoreElement.className = 'score-element';
-    scoreElement.textContent = `${score.username}: ${score.score}`;
-    scoreElement.classList.add(
-      score.index % 2 === 0 ? 'score-even' : 'score-odd'
-    );
-    scoreboardDiv.appendChild(scoreElement);
+  scores.forEach((score, index) => {
+    const scoreDiv = document.createElement('div');
+    scoreDiv.innerText = `${score.user} - ${score.score}`;
+    scoreDiv.classList.add('score-item');
+    if (index % 2 === 0) {
+      scoreDiv.classList.add('white-bg');
+    } else {
+      scoreDiv.classList.add('grey-bg');
+    }
+    scoreboard.appendChild(scoreDiv);
   });
 };
 
-// Function to handle form submission
-const handleSubmit = (event) => {
-  event.preventDefault();
-  const usernameInput = document.getElementById('username');
-  const scoreInput = document.getElementById('yourscore');
-
-  const username = usernameInput.value;
-  const score = scoreInput.value;
-
-  if (username.trim() === '' || score.trim() === '') {
-    alert('Please enter both a username and a score.');
-    return;
+const saveScore = async (user, score) => {
+  try {
+    const payload = {
+      user: user,
+      score: score,
+    };
+    const response = await fetch(_api_js__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
+    const data = await response.json();
+    console.log(data.result);
+  } catch (error) {
+    console.error('Error saving score:', error);
   }
-  (0,_addScore_js__WEBPACK_IMPORTED_MODULE_0__["default"])(username, score);
-  renderScores();
-
-  // Clear the form inputs
-  usernameInput.value = '';
-  scoreInput.value = '';
 };
 
 
@@ -844,18 +766,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const form = document.getElementById('form');
-form.addEventListener('submit', _modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.handleSubmit);
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const username = document.getElementById('username').value;
+  const score = document.getElementById('yourscore').value;
 
-// Initial render of the scoreboard
-(0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.renderScores)();
+  if (!username || !score) {
+    console.error('Please fill in both username and score fields.');
+    return;
+  }
+
+  await (0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.saveScore)(username, score);
+  // After submitting, refresh the scores to display the updated list
+  const scores = await (0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.getScores)();
+  (0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.displayScores)(scores);
+  // Reset the form fields after submission
+  form.reset();
+});
+
+// On page load, fetch and display the initial scores
+window.addEventListener('DOMContentLoaded', async () => {
+  const scores = await (0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.getScores)();
+  (0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.displayScores)(scores);
+});
 
 const refreshButton = document.getElementById('refresh-btn');
-refreshButton.addEventListener('click', () => {
-  location.reload();
+refreshButton.addEventListener('click', async () => {
+  const scores = await (0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.getScores)();
+  (0,_modules_renderScores_js__WEBPACK_IMPORTED_MODULE_1__.displayScores)(scores);
 });
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlea4411fd8df04f38ef45f.js.map
+//# sourceMappingURL=bundle1b7be9a8a7bd4f98e3f5.js.map
