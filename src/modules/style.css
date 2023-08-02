@@ -66,13 +66,17 @@ button {
 .score-element {
   padding: 10px 0 10px 10px;
 }
-
-.score-even {
-  background-color: #f0f0f0;
+        
+.score-item {
+  padding: 5px;
 }
-
-.score-odd {
-  background-color: #fff;
+    
+.white-bg {
+  background-color: white;
+}
+    
+.grey-bg {
+  background-color: rgb(240, 240, 240);
 }
 
 @media screen and (max-width: 600px) {
